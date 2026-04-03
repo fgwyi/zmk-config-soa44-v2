@@ -31,6 +31,11 @@
             bindings = <&new_4>;
             key-positions = <9 21>;
         };
+
+        combo5 {
+            bindings = <&new_5>;
+            key-positions = <22 10>;
+        };
     };
 
     macros {
@@ -61,6 +66,13 @@
             bindings = <&kp LBKT &kp RBKT>;
             label = "NEW_4";
         };
+
+        new_5: new_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT>;
+            label = "NEW_5";
+        };
     };
 
     behaviors {
@@ -81,7 +93,7 @@
             bindings = <
 &kp ESCAPE     &kp Q     &kp L     &kp U      &kp COMMA    &kp DOT    &kp F      &kp W          &kp R  &kp H  &kp P     &kp BACKSPACE
 &mt LCTRL TAB  &kp E     &kp I     &kp A      &kp O        &kp MINUS  &kp K      &kp T          &kp N  &kp S  &kp Y     &mo 2
-&kp LSHFT      &kp Z     &kp X     &kp C      &kp V        &none      &kp G      &kp D          &kp M  &kp J  &kp B     &mo 2
+&kp LSHFT      &kp Z     &kp X     &kp C      &kp V        &none      &kp G      &kp D          &kp M  &kp J  &kp B     &mo 3
                &kp LALT  &kp LGUI  &kp LANG2  &lt 3 SPACE  &kp LANG1  &kp ENTER  &kp BACKSPACE                &kp RGUI
             >;
         };
@@ -106,10 +118,10 @@
 
         NUM {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans   &trans   &trans   &trans  &trans  &trans                  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans    &kp UP    &trans     &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans    &trans    &trans     &trans  &trans
+        &trans  &trans   &trans   &trans   &trans  &trans  &trans                         &trans
             >;
         };
 
