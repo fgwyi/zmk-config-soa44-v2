@@ -176,10 +176,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 ESC    &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U      &to_layer_0 COMMA  &to_layer_0 DOT    &to_layer_0 F      &kp LC(LEFT)      &kp LC(RIGHT)  &to_layer_0 H  &to_layer_0 P           &to 0
-&to_layer_0 LCTRL  &to_layer_0 E  &to_layer_0 I  &to_layer_0 A      &to_layer_0 O      &to_layer_0 MINUS  &to_layer_0 K      &mkp MB1          &mkp MB2       &mo 5          &lt 1 LG(LA(NUMBER_8))  &to 0
-&kp LSHFT          &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C      &to_layer_0 V      &to 0              &to_layer_0 G      &kp LA(LEFT)      &kp LA(RIGHT)  &kp LC(UP)     &to_layer_0 B           &to 0
-                   &kp LALT       &kp LGUI       &to_layer_0 LANG1  &to_layer_0 SPACE  &to_layer_0 LANG2  &to_layer_0 ENTER  &to_layer_0 BSPC                                &mo 0
+&kp ESC    &kp Q     &kp L     &kp U    &kp COMMA  &kp DOT    &kp F      &kp LC(LEFT)  &kp LC(RIGHT)  &to_layer_0 H  &kp P                   &kp F17
+&kp LCTRL  &kp E     &kp I     &kp A    &kp O      &kp MINUS  &kp K      &mkp MB1      &mkp MB2       &mo 5          &lt 1 LG(LA(NUMBER_8))  &kp F18
+&kp LSHFT  &kp Z     &kp X     &kp C    &kp V      &to 0      &kp G      &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(UP)     &to_layer_0 B           &to 0
+           &kp LALT  &kp LGUI  &kp F19  &kp SPACE  &kp F20    &kp ENTER  &kp BSPC                                    &mo 0
             >;
         };
 
