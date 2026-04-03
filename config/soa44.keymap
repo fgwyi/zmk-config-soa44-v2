@@ -135,10 +135,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans      &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1      &mkp MB2       &mo 5       &kp LS(LA(NUMBER_8))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(UP)  &trans                &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans
+&to_layer_0 ESC    &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U      &to_layer_0 COMMA  &to_layer_0 DOT    &to_layer_0 F      &to_layer_0 W     &to_layer_0 R  &to_layer_0 H  &to_layer_0 P         &to 0
+&to_layer_0 LCTRL  &to_layer_0 E  &to_layer_0 I  &to_layer_0 A      &to_layer_0 O      &to_layer_0 MINUS  &to_layer_0 K      &mkp MB1          &mkp MB2       &mo 5          &kp LS(LA(NUMBER_8))  &to 0
+&kp LSHFT          &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C      &to_layer_0 V      &to 0              &to_layer_0 G      &kp LA(LEFT)      &kp LA(RIGHT)  &kp LC(UP)     &to_layer_0 B         &to 0
+                   &kp LALT       &kp LGUI       &to_layer_0 LANG2  &to_layer_0 SPACE  &to_layer_0 LANG1  &to_layer_0 ENTER  &to_layer_0 BSPC                                &kp RGUI
             >;
         };
 
@@ -162,10 +162,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans   &kp F14  &kp F16  &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans  &kp F13  &kp F15  &trans   &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans   &trans   &trans   &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans                     &trans
             >;
         };
 
@@ -180,10 +180,10 @@
 
         Bluetooth {
             bindings = <
-&trans  &trans        &trans        &trans        &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
-&trans  &trans        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans        &trans          &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &bootloader   &trans        &trans        &trans        &trans          &bt BT_CLR
-        &trans        &trans        &trans        &trans  &trans  &trans        &trans                                    &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &bootloader   &trans        &trans        &trans        &trans          &bt BT_CLR
+        &trans  &trans  &trans  &trans  &trans  &trans        &trans                                    &bt BT_CLR_ALL
             >;
         };
     };
