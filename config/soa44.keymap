@@ -12,11 +12,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo1 {
-            bindings = <&kp DELETE>;
-            key-positions = <24 42>;
-        };
-
         combo2 {
             bindings = <&new_2>;
             key-positions = <19 7>;
@@ -91,6 +86,11 @@
             bindings = <&new_16>;
             key-positions = <33 21>;
         };
+
+        combo17 {
+            bindings = <&new_17>;
+            key-positions = <18 30>;
+        };
     };
 
     macros {
@@ -149,6 +149,13 @@
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "NEW_16";
         };
+
+        new_17: new_17 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER &kp UNDER>;
+            label = "NEW_17";
+        };
     };
 
     behaviors {
@@ -188,34 +195,34 @@
 &to_layer_0 ESC  &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION  &kp DOLLAR     &kp PERCENT  &trans          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE       &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
 &trans           &kp EQUAL    &kp SEMICOLON    &kp COLON     &kp ASTERISK   &kp SLASH    &trans          &kp LEFT_PARENTHESIS   &kp LEFT_BRACE        &kp LEFT_BRACKET   &kp LESS_THAN     &trans
 &trans           &kp PIPE     &kp CARET        &kp TILDE     &kp AMPERSAND  &to 0        &kp UNDERSCORE  &kp DOUBLE_QUOTES      &kp NON_US_BACKSLASH  &kp GRAVE          &kp HASH          &trans
-                 &trans       &trans           &trans        &trans         &trans       &trans          &trans                                                          &trans
+                 &trans       &trans           &trans        &kp SPACE      &trans       &kp ENTER       &kp DELETE                                                      &trans
             >;
         };
 
         NUM {
             bindings = <
-&to_layer_0 ESC  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans    &kp UP    &trans     &to 3   &trans
-&trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans           &kp F9  &kp F10  &kp F11  &kp F12  &to 0   &trans  &trans    &trans    &trans     &trans  &trans
-                 &trans  &trans   &trans   &trans   &trans  &trans  &trans                         &trans
+&to_layer_0 ESC  &kp F1    &kp F2    &kp F3   &kp F4   &trans  &trans  &trans    &kp UP    &trans     &to 3   &trans
+&kp LCTRL        &kp F5    &kp F6    &kp F7   &kp F8   &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LSHFT        &kp F9    &kp F10   &kp F11  &kp F12  &to 0   &trans  &trans    &trans    &trans     &trans  &trans
+                 &kp LALT  &kp LGUI  &trans   &trans   &trans  &trans  &trans                         &trans
             >;
         };
 
         ARROW {
             bindings = <
-&to_layer_0 ESC  &trans  &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans  &trans   &trans   &trans  &trans  &trans
-&trans           &trans  &kp N4  &kp N5  &kp N6  &kp COMMA   &trans  &kp F13  &kp F14  &trans  &trans  &trans
-&trans           &trans  &kp N7  &kp N8  &kp N9  &kp N0      &trans  &kp F15  &kp F16  &trans  &to 4   &trans
-                 &trans  &trans  &trans  &trans  &trans      &trans  &trans                    &trans
+&to_layer_0 ESC  &trans    &kp N1    &kp N2  &kp N3  &kp PERIOD  &trans  &trans   &trans   &trans  &trans  &trans
+&kp LCTRL        &trans    &kp N4    &kp N5  &kp N6  &kp COMMA   &trans  &kp F13  &kp F14  &trans  &trans  &trans
+&kp LSHFT        &trans    &kp N7    &kp N8  &kp N9  &kp N0      &trans  &kp F15  &kp F16  &trans  &to 4   &trans
+                 &kp LALT  &kp LGUI  &trans  &trans  &trans      &trans  &trans                    &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&to_layer_0 ESC  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &trans      &trans                &trans
-&trans           &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1      &mkp MB2       &trans      &kp LG(LA(NUMBER_8))  &trans
-&trans           &trans  &trans  &trans  &trans  &to 0   &trans  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(UP)  &trans                &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans
+&to_layer_0 ESC  &trans    &trans    &trans  &trans  &trans  &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &trans      &trans                &trans
+&kp LCTRL        &trans    &trans    &trans  &trans  &trans  &trans  &mkp MB1      &mkp MB2       &trans      &kp LG(LA(NUMBER_8))  &trans
+&kp LSHFT        &trans    &trans    &trans  &trans  &to 0   &trans  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(UP)  &trans                &trans
+                 &kp LALT  &kp LGUI  &trans  &trans  &trans  &trans  &trans                                   &trans
             >;
         };
 
@@ -223,7 +230,7 @@
             bindings = <
 &to_layer_0 ESC  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &kp K   &trans  &to 6   &trans
 &trans           &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans  &trans  &kp H   &kp J   &kp L   &trans  &trans
-&trans           &trans  &trans        &trans        &trans        &to 0   &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp Z   &trans        &trans        &trans        &to 0   &trans  &trans  &trans  &trans  &trans  &trans
                  &trans  &trans        &trans        &trans        &trans  &trans  &trans                  &trans
             >;
         };
