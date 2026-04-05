@@ -201,8 +201,8 @@
 
         NUM {
             bindings = <
-&to_layer_0 ESC  &kp F1    &kp F2    &kp F3   &kp F4   &trans  &trans  &trans    &kp UP    &trans     &to 3   &trans
-&kp LCTRL        &kp F5    &kp F6    &kp F7   &kp F8   &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&to_layer_0 ESC  &kp F1    &kp F2    &kp F3   &kp F4   &trans  &trans  &trans    &kp UP    &trans     &trans  &trans
+&kp LCTRL        &kp F5    &kp F6    &kp F7   &kp F8   &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &to 3   &trans
 &kp LSHFT        &kp F9    &kp F10   &kp F11  &kp F12  &to 0   &trans  &trans    &trans    &trans     &trans  &trans
                  &kp LALT  &kp LGUI  &trans   &trans   &trans  &trans  &trans                         &trans
             >;
@@ -210,10 +210,10 @@
 
         ARROW {
             bindings = <
-&to_layer_0 ESC  &trans    &kp N1    &kp N2  &kp N3  &kp PERIOD  &trans  &trans   &trans   &trans  &trans  &trans
-&kp LCTRL        &trans    &kp N4    &kp N5  &kp N6  &kp COMMA   &trans  &kp F13  &kp F14  &trans  &trans  &trans
-&kp LSHFT        &trans    &kp N7    &kp N8  &kp N9  &kp N0      &trans  &kp F15  &kp F16  &trans  &to 4   &trans
-                 &kp LALT  &kp LGUI  &trans  &trans  &trans      &trans  &trans                    &trans
+&to_layer_0 ESC  &trans    &kp N1    &kp N2  &kp N3  &kp PERIOD  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL        &trans    &kp N4    &kp N5  &kp N6  &kp COMMA   &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&kp LSHFT        &trans    &kp N7    &kp N8  &kp N9  &kp N0      &trans  &trans  &trans  &trans  &to 4   &trans
+                 &kp LALT  &kp LGUI  &trans  &trans  &trans      &trans  &trans                  &trans
             >;
         };
 
