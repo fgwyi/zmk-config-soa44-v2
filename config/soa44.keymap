@@ -176,7 +176,7 @@
             bindings = <
 &kp ESCAPE     &kp Q     &kp L     &kp U      &kp COMMA  &kp DOT    &kp F      &kp W          &kp R  &kp H    &kp P    &mo 6
 &mt LCTRL TAB  &kp E     &kp I     &kp A      &kp O      &kp MINUS  &kp K      &kp T          &kp N  &lt 5 S  &lt 1 Y  &mo 3
-&kp LSHFT      &kp Z     &kp X     &kp C      &kp V      &to 1      &kp G      &kp D          &kp M  &kp J    &kp B    &mo 2
+&kp LSHFT      &kp J     &kp X     &kp C      &kp V      &to 1      &kp G      &kp D          &kp M  &kp Z    &kp B    &mo 2
                &kp LALT  &kp LGUI  &kp LANG1  &kp SPACE  &kp LANG2  &kp ENTER  &kp BACKSPACE                  &mo 4
             >;
         };
@@ -192,10 +192,10 @@
 
         FUNCTION {
             bindings = <
-&to_layer_0 ESC  &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION  &kp DOLLAR     &kp PERCENT  &trans          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE       &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
-&trans           &kp EQUAL    &kp SEMICOLON    &kp COLON     &kp ASTERISK   &kp SLASH    &trans          &kp LEFT_PARENTHESIS   &kp LEFT_BRACE        &kp LEFT_BRACKET   &kp LESS_THAN     &trans
-&trans           &kp PIPE     &kp CARET        &kp TILDE     &kp AMPERSAND  &to 0        &kp UNDERSCORE  &kp DOUBLE_QUOTES      &kp NON_US_BACKSLASH  &kp GRAVE          &kp HASH          &trans
-                 &trans       &trans           &trans        &kp SPACE      &trans       &kp ENTER       &kp DELETE                                                      &trans
+&to_layer_0 ESC  &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION  &kp APOSTROPHE  &kp PERCENT  &trans          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
+&trans           &kp EQUAL    &kp SEMICOLON    &kp COLON     &kp ASTERISK    &kp SLASH    &trans          &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LESS_THAN     &trans
+&trans           &kp PIPE     &kp CARET        &kp TILDE     &kp AMPERSAND   &to 0        &kp UNDERSCORE  &kp DOUBLE_QUOTES      &kp BACKSLASH    &kp GRAVE          &kp HASH          &trans
+                 &trans       &trans           &trans        &kp SPACE       &trans       &kp ENTER       &kp DELETE                                                 &trans
             >;
         };
 
