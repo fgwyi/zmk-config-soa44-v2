@@ -162,7 +162,7 @@
             #binding-cells = <1>;
             bindings =
                 <&to 7 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_tap_time 200>,
+                <&macro_tap_time 1500>,
                 <&to 0>;
 
             label = "NEW_18";
