@@ -161,13 +161,12 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&to 7 &macro_param_1to1>,
+                <&to 7 &macro_param_1to1 &sk MACRO_PLACEHOLDER>,
                 <&macro_press>,
-                <&kp MACRO_PLACEHOLDER>,
                 <&macro_wait_time 500>,
                 <&macro_param_1to1>,
                 <&macro_release>,
-                <&kp MACRO_PLACEHOLDER>,
+                <&sk MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&to 0>;
 
