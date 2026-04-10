@@ -160,7 +160,10 @@
         new_18: new_18 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&mo 7 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings =
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 7>,
+                <&macro_wait_time 2>;
+
             label = "NEW_18";
         };
     };
