@@ -205,10 +205,10 @@
 
         MOUSE {
             bindings = <
-&kp ESC              &kp Q     &kp L              &kp U    &kp COMMA  &kp DOT    &kp F      &kp LC(LEFT)  &kp LC(RIGHT)  &to_layer_0 H  &kp P                   &kp F17
-&mo7_kp LCTRL LCTRL  &kp E     &kp I              &kp A    &kp O      &kp MINUS  &kp K      &mkp MB1      &mkp MB2       &mo 5          &lt 1 LG(LA(NUMBER_8))  &kp F18
-&kp LSHFT            &kp Z     &kp X              &kp C    &kp V      &to 0      &kp G      &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(UP)     &to_layer_0 B           &to 0
-                     &kp LALT  &mo7_kp LGUI LGUI  &kp F19  &kp SPACE  &kp F20    &kp ENTER  &kp BSPC                                    &mo 0
+&kp ESC              &kp Q     &kp L              &kp U    &kp COMMA  &kp DOT    &kp F      &kp LC(LEFT)  &kp LC(RIGHT)  &to_layer_0 H  &kp P                   &mo 6
+&mo7_kp LCTRL LCTRL  &kp E     &kp I              &kp A    &kp O      &kp MINUS  &kp K      &mkp MB1      &mkp MB2       &mo 5          &lt 1 LG(LA(NUMBER_8))  &mo 3
+&kp LSHFT            &kp Z     &kp X              &kp C    &kp V      &to 0      &kp G      &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(UP)     &to_layer_0 B           &to 2
+                     &kp LALT  &mo7_kp LGUI LGUI  &kp F19  &kp SPACE  &kp F20    &kp ENTER  &kp BSPC                                    &mo 7
             >;
         };
 
