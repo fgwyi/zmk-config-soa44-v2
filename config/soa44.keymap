@@ -26,21 +26,21 @@
             label = "TO_LAYER_0";
         };
 
-        macro_PAR: PAR {
+        macro_PAR: DPAR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
             label = "( )";
         };
 
-        macro_BKT: BKT {
+        macro_BKT: DBKT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT>;
             label = "[ ]";
         };
 
-        macro_BRC: BRC {
+        macro_BRC: DBRC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBRC &kp RBRC &kp LEFT>;
