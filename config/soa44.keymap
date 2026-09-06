@@ -26,32 +26,32 @@
             label = "TO_LAYER_0";
         };
 
-        macro_PAR: PARENTHESIS {
+        macro_PAR: PAR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
-            label = "PARENTHESIS";
+            label = "( )";
         };
 
-        macro_BKT: BRACKET {
+        macro_BKT: BKT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT>;
-            label = "BRACKET";
+            label = "[ ]";
         };
 
-        macro_BRC: BRACE {
+        macro_BRC: BRC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBRC &kp RBRC &kp LEFT>;
-            label = "BRACE";
+            label = "{ }";
         };
 
-        macro_DQT: DOUBLE_QUOTES {
+        macro_DQT: DDQT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp DQT &kp LEFT>;
-            label = "DOUBLE_QUOTES";
+            label = "", "";
         };
     };
 
