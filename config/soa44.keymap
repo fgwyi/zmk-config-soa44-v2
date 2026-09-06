@@ -30,28 +30,28 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
-            label = "( )";
+            label = "DPAR";
         };
 
         macro_BKT: DBKT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT>;
-            label = "[ ]";
+            label = "DBKT";
         };
 
         macro_BRC: DBRC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBRC &kp RBRC &kp LEFT>;
-            label = "{ }";
+            label = "DBRC";
         };
 
         macro_DQT: DDQT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp DQT &kp LEFT>;
-            label = "", "";
+            label = "DDQT";
         };
     };
 
